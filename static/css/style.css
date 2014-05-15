@@ -1,0 +1,228 @@
+
+@font-face {
+    font-family: 'munro_smallregular';
+    src: url('fonts/munrosmall-webfont.eot');
+    src: url('fonts/munrosmall-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/munrosmall-webfont.woff') format('woff'),
+         url('fonts/munrosmall-webfont.ttf') format('truetype'),
+         url('fonts/munrosmall-webfont.svg#munro_smallregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'silkscreennormal';
+    src: url('fonts/slkscr-webfont.eot');
+    src: url('fonts/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/slkscr-webfont.woff') format('woff'),
+         url('fonts/slkscr-webfont.ttf') format('truetype'),
+         url('fonts/slkscr-webfont.svg#silkscreennormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+canvas{
+	background-color: #AD0000;
+}
+
+body{
+	margin-top: 595px;
+	background-color: #ddd;
+}
+
+
+.navbar-default .navbar-brand {
+color: #FFF;
+font-family: 'silkscreennormal';
+font-size: 30px;
+width: 120px;
+height: 55px;
+line-height: 24px;
+padding: 5px;
+}
+.navbar-default .navbar-nav>li>a {
+color: #FFF;
+}
+.navbar{
+	border: 0px;
+	background: #cccccc;
+
+	color: #000;
+	margin: 0;
+	border-radius: 0px;
+	border-bottom: 7px solid #000;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #A00000;
+background-color: #FFF;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: #A00000;
+background-color: #FFF;
+height: 55px;
+}
+.navbar > .container{
+background-color: #57A8D5;
+border-bottom: 7px solid #AD0000;
+margin-bottom: -7px;
+}
+
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #FFF;
+background-color: #AD0000;
+height: 55px;
+}
+@media (min-width: 768px){
+.navbar-nav>li>a {
+padding-top: 19px;
+padding-bottom: 15px;
+}
+}
+#screen{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 595px;
+}
+
+body > .container {
+	background: #FFF;
+}
+
+.footer{
+	border-top: 7px solid #000;
+	background: #CCCCCC;
+	color: #FFF;
+}
+.footer > .container{
+	padding-bottom: 10px;
+	background: #57A8D5;
+border-top: 7px solid #AD0000;
+margin-top: -7px;
+}
+.nav>li {
+
+height: 55px;
+}
+#footerlogo{
+	background-color: white;
+	border-bottom: 7px solid #AD0000;
+	border-right: 7px solid #AD0000;
+	color: #000;
+	font-family: 'silkscreennormal';
+	font-size: 30px;
+}
+#main > .row{
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin-left: -16px;
+	margin-right: -16px;
+}
+
+
+.footcontent{
+	float: left;
+	padding-left: 20px;
+padding-top: 0px;
+}
+ul, ol {
+padding-left: 20px;
+margin-bottom: 0px;
+}
+.footcontent > .content{
+border: 1px dashed #fff;
+padding-top: 5px; 
+padding-left: 3px; 
+width: 260px;
+padding-bottom: 5px;
+}
+.footcontent > h2{
+	margin-bottom: -1px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: 'silkscreennormal';
+	color: #000;
+	background: white;
+	padding-left: 10px;
+	border-left: 7px solid #AD0000;
+	width: 150px;
+}
+
+li > a{
+	color: #fff;
+	text-decoration: none;
+}
+
+li > a:hover, a:focus {
+color: #AD0000;
+text-decoration: none;
+}
+
+#front{
+	
+	position: absolute;
+top: 200px;
+left: 50%;
+text-align: center;
+margin-left: -585px;
+width: 1170px;
+font-family: 'silkscreennormal';
+background-color: white;
+}
+#front > h1{
+	margin-top: 0px;
+	font-size: 122px;
+}
+
+@media (max-width: 1199px){
+#front {
+width: 970px;
+top: 140px;
+margin-left: -485px;
+}
+#screen {
+height: 505px;
+}
+body{
+	margin-top: 505px;
+}
+}
+@media (max-width: 992px){
+#front > h1{
+	margin-top: 0px;
+	font-size: 92px;
+}
+#front{
+width: 750px;
+margin-left: -375px;
+}
+#screen {
+height: 445px;
+}
+body{
+	margin-top: 445px;
+}
+}
+@media (max-width: 767px){
+	#screen {
+		display: none;
+	}
+	#front{
+		display: none;
+	}
+	body{
+	margin-top: 0px;
+}
+}
+
+
+.thumbnail {
+border: 1px dashed #AD0000;
+}
+.doneby{
+	color: #428bca;
+}

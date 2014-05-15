@@ -1,0 +1,8 @@
+baseurl: "http://speedacm.org"
+title: "Speed ACM"
+indexes:
+  tag: "tags"
+  topic: "topics"
+params:
+  author: "Speed ACM"
+  year: "2014"
