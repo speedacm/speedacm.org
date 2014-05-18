@@ -13,7 +13,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li {{ if eq .Site.Title .Title }} class="active" {{end}}><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li {{ if eq .Title "About" }} class="active" {{end}}><a href="/about">About</a></li>
             <li {{ if eq .Title "Posts" }} class="active" {{end}}> <a href="/posts">Posts</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
