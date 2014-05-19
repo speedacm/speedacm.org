@@ -14,7 +14,7 @@
           <ul class="nav navbar-nav">
             <li {{ if eq .Site.Title .Title }} class="active" {{end}}><a href="/">Home</a></li>
             <li {{ if or (eq .Title "Abouts") (eq .Section "about") }} class="active" {{end}}><a href="/about/speedacm">About</a></li>
-            <li class="dropdown" {{ if or (eq .Title "Calendars") (eq .Section "calendars") }} class="active" {{end}}>
+            <li class="dropdown{{ if or (eq .Title "Calendars") (eq .Section "calendars") }} active{{end}}">
             	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendars<b class="caret"></b></a>
             	<ul class="dropdown-menu">
         	    	<li><a href="/calendars">All Calendars</a></li>
