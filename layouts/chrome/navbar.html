@@ -14,7 +14,16 @@
           <ul class="nav navbar-nav">
             <li {{ if eq .Site.Title .Title }} class="active" {{end}}><a href="/">Home</a></li>
             <li {{ if or (eq .Title "Abouts") (eq .Section "about") }} class="active" {{end}}><a href="/about/speedacm">About</a></li>
-            <li {{ if or (eq .Title "Calendars") (eq .Section "calendars") }} class="active" {{end}}> <a href="/calendars">Calendars</a></li>
+            <li class="dropdown" {{ if or (eq .Title "Calendars") (eq .Section "calendars") }} class="active" {{end}}>
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendars<b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+        	    	<li><a href="/calendars">All Calendars</a></li>:
+        	    	<li class="divider"></li>
+        	    	<li><a href="/calendars/slug">SLUG</a></li>
+			<li><a href="/calendars/ccdc">Cyber Defense</a></li>
+			<li><a href="/calendars/gamedev">Game Development</a></li>
+		</ul>
+            </li>
             <li {{ if or (eq .Title "Posts") (eq .Section "posts") }} class="active" {{end}}> <a href="/posts">Posts</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
