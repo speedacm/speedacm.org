@@ -1,7 +1,7 @@
 ---
-title: "Hello, world!"
+title: "About Us"
 date: "2014-03-15"
-tags: [ "helloworld" ]
+tags: [ "speedacm","about" ]
 ---
 
 # In si Palaestini toto confecta adgnoscitque
