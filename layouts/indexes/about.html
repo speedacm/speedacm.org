@@ -6,7 +6,9 @@
 <div class="col-md-2"></div>
 
 <div id="center" class="col-md-8">
-		<h1 id="title">About Us</h1>
+	{{ range .Data.Pages }}
+	{{ .Render "content"}}
+	{{ end }}
 </div>
 
 <div class="col-md-2"></div>
