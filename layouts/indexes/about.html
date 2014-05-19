@@ -6,13 +6,7 @@
 <div class="col-md-2"></div>
 
 <div id="center" class="col-md-8">
-		<h1 id="title">{{ .Title }}</h1>
-		<ul>
-			{{ $data := .Data }}
-			{{ range $key,$value := .Data.Index.ByCount }}
-			<li><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> {{ $value.Count }} </li>
-			{{ end }}
-		</ul>
+		<h1 id="title">About Us</h1>
 </div>
 
 <div class="col-md-2"></div>
