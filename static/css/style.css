@@ -160,6 +160,13 @@ li > a:hover, a:focus {
 color: #AD0000;
 text-decoration: none;
 }
+#contentheaderbackground{
+position: absolute;
+left: 50%;
+margin-left: -800px;
+z-index: -1;
+}
+
 
 #front{
 	
@@ -186,8 +193,8 @@ margin-left: -485px;
 #screen {
 height: 505px;
 }
-body{
-	margin-top: 505px;
+#contentheaderbackground{
+margin-left: -700px;
 }
 }
 @media (max-width: 992px){
@@ -202,8 +209,8 @@ margin-left: -375px;
 #screen {
 height: 445px;
 }
-body{
-	margin-top: 445px;
+#contentheaderbackground{
+margin-left: -600px;
 }
 }
 @media (max-width: 767px){
@@ -214,10 +221,17 @@ body{
 		display: none;
 	}
 	body{
-	margin-top: 0px;
-}
+		margin-top: 0px;
+	}
+	#contentheaderbackground{
+		margin-left: -380px;
+	}
+	#content-header {
+		text-align: center;
+	}
 }
 
+html,body {height:100%}
 
 #content-header{
 	padding-left: 30px;
@@ -225,8 +239,17 @@ body{
 	padding-bottom: 20px;
 	font-size: 36px;
 	background-color : transparent;
+	color: white;
 }
+#content{
+	min-height: 100%;
+	
+}
+.container > .col-md-12
+{
+padding-top: 10px;
 
+}
 
 .thumbnail {
 border: 1px dashed #AD0000;

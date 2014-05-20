@@ -1,13 +1,13 @@
 {{ template "chrome/header.html" . }}
-<script src="/js/backgound.js"></script>
-<div id="content-header-background">
+<div id="contentheaderbackground">
 
 </div>
+<script src="/js/about.js"></script>
 {{ template "chrome/navbar.html" . }}
 <div class="container" id="content-header">
 {{ .Title }}	
 </div>
-<div class="container">
+<div class="container" id="content">
 
 <div class="col-md-12">
 {{ .Content }}
