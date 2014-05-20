@@ -1,7 +1,7 @@
 ---
 title: "UofL ACM Game Development Mailing List"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "game dev mailing list", "game dev", "mailing list", "listserv", "game dev listserv", "game development mailing list", "game development", "mailing list", "listserv", "game development listserv" ]
 ---
 <p>
 <div align="right">

@@ -1,7 +1,7 @@
 ---
 title: "UofL ACM Cyber Defense Mailing List"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "cyber defense mailing list", "cyber defense", "mailing list", "listserv", "cyber defense listserv" ]
 ---
 <p>
 <div align="right">

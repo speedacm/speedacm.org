@@ -1,7 +1,7 @@
 ---
 title: "ACM Constitution"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "constitution" ]
 ---
 <div align="right">
 	<p><a href="https://docs.google.com/document/d/1ZKdS0GHRUu8pZpbCFTjND3soPrUoSMEMd6sfCo-tJzA/edit?usp=sharing" target="_blank" title="View document on Google Drive" class="btn btn-primary"><i class="glyphicon glyphicon-hdd"></i> View on Google Drive</a></p>

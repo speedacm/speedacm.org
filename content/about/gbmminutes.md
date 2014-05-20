@@ -1,7 +1,7 @@
 ---
 title: "GBM Minutes"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "gbm minutes" ]
 ---
 <div align="right">
 	<p><a href="https://drive.google.com/folderview?id=0B4ybQLDSBpx7RWtXRzlRMHp0Ulk&usp=drive_web" target="_blank" title="View document on Google Drive" class="btn btn-primary"><i class="glyphicon glyphicon-hdd"></i> View on Google Drive</a></p>

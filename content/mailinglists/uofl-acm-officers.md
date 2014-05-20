@@ -1,7 +1,7 @@
 ---
 title: "UofL ACM Officers Mailing List"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "officer mailing list", "officers", "mailing list", "listserv", "officer listserv" ]
 ---
 <p>
 <div align="right">

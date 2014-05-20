@@ -1,7 +1,7 @@
 ---
 title: "ACM Officers"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "officers" ]
 ---
 
 **President**  

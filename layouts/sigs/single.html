@@ -1,0 +1,13 @@
+{{ template "chrome/header.html" . }}
+{{ template "chrome/navbar.html" . }}
+{{ template "chrome/fancytitle.html" .Title }}
+
+<div class="container" id="content">
+
+<div class="col-md-12">
+{{ .Content }}
+</div>
+
+</div>
+
+{{ template "chrome/footer.html" . }}

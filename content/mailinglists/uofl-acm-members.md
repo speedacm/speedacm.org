@@ -1,7 +1,7 @@
 ---
 title: "UofL ACM Members Mailing List"
 date: "2014-03-15"
-tags: [ "calendar" ]
+tags: [ "member mailing list", "members", "mailing list", "listserv", "members listserv" ]
 ---
 <p>
 <div align="right">
