@@ -1,5 +1,5 @@
 ---
-title: "Speed ACM Event Calendar"
+title: "Speed ACM Events"
 date: "2014-03-15"
 tags: [ "calendar" ]
 ---

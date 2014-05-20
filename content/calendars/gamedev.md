@@ -1,5 +1,5 @@
 ---
-title: "Game Development Event Calendar"
+title: "Game Development Events"
 date: "2014-03-15"
 tags: [ "calendar" ]
 ---

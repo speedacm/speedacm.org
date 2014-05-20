@@ -1,5 +1,5 @@
 ---
-title: "SLUG Event Calendar"
+title: "SLUG Events"
 date: "2014-03-15"
 tags: [ "calendar" ]
 ---

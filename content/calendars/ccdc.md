@@ -1,5 +1,5 @@
 ---
-title: "Cyber Defense Event Calendar"
+title: "Cyber Defense Events"
 date: "2014-03-15"
 tags: [ "calendar" ]
 ---
