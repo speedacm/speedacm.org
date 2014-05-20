@@ -8,7 +8,7 @@ tags: [ "calendar" ]
 	<strong><a href="https://groups.google.com/forum/#!forum/uofl-acm-officers" target="_blank" title="View group on Google">View on Google</a></strong>
 </div>
 <iframe id="forum_embed"
-  src="https://groups.google.com/forum/embed/?place=forum/uofl-acm-officers&showsearch=false&showpopout=false&showtabs=true&hideforumtitle=true"
+  src="https://groups.google.com/forum/embed/?place=forum/uofl-acm-officers&showsearch=false&showpopout=false&showtabs=true&hideforumtitle=true&parenturl=http%3A%2F%2Fspeedacm.org%2Fmailinglists%2Fuofl-acm-officers%2F"
   scrolling="no"
   frameborder="0"
   width="100%"
