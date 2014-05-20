@@ -2,6 +2,8 @@
 title: "ACM Mailing Lists"
 date: "2014-03-15"
 tags: [ "mailing lists", "listserv", "all mailing lists" ]
+aliases:
+    - /mailinglists
 ---
 
 **[ACM General Member List](/mailinglists/uofl-acm-members)** - [Join](https://groups.google.com/forum/#!forum/uofl-acm-members/join)  

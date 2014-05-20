@@ -2,6 +2,8 @@
 title: "Who We Are"
 date: "2014-03-15"
 tags: [ "speedacm","about" ]
+aliases:
+    - /about
 ---
 
 The Association of Computing Machinary is an RSO based out of the Computer Engineering &amp; Computer Science department of the J.B. Speed School of Engineering. As the national ACM states, the ACM is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession. We are dedicated to helping our fellow students advance their skills in today's computing world. However, the ACM is not just limited to that. All students at UofL are welcome to join us, become friends, have fun, and learn.
