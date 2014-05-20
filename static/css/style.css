@@ -219,6 +219,15 @@ body{
 }
 
 
+#content-header{
+	padding-left: 30px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 36px;
+	background-color : transparent;
+}
+
+
 .thumbnail {
 border: 1px dashed #AD0000;
 }

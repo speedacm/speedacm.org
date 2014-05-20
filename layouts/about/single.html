@@ -1,10 +1,16 @@
 {{ template "chrome/header.html" . }}
-{{ template "chrome/navbar.html" . }}
+<script src="/js/backgound.js"></script>
+<div id="content-header-background">
 
+</div>
+{{ template "chrome/navbar.html" . }}
+<div class="container" id="content-header">
+{{ .Title }}	
+</div>
 <div class="container">
 
 <div class="col-md-12">
-{{ .Render "content" }}
+{{ .Content }}
 </div>
 
 </div>
