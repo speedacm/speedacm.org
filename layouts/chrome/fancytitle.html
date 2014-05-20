@@ -1,5 +1,10 @@
 <div id="contentheaderbackground"> </div>
-<script src="../title.js"></script>
+{{ $titlejs := "/js/title.default.js" }}
+{{ if isset .Params "titlejs" }}
+<script src="{{ .Params.titlejs }}"></script>
+{{ else }}
+<script src="{{ $titlejs }}"></script>
+{{ end }}
 <div class="container" id="content-header">
-{{ . }}	
+{{ .Title }}	
 </div>
