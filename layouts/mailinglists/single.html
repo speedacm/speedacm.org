@@ -1,12 +1,7 @@
 {{ template "chrome/header.html" . }}
-<div id="contentheaderbackground">
-
-</div>
-<script src="/js/about.js"></script>
 {{ template "chrome/navbar.html" . }}
-<div class="container" id="content-header">
-{{ .Title }}	
-</div>
+{{ template "chrome/fancytitle.html" .Title }}
+
 <div class="container" id="content">
 
 <div class="col-md-12">
