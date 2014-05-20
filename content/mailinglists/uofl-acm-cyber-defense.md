@@ -9,7 +9,7 @@ tags: [ "calendar" ]
 	&nbsp;-&nbsp;<a href="https://groups.google.com/forum/#!forum/uofl-acm-cyber-defense/join" target="_blank" title="Join the Cyber Defense Mailing List">Join</a>
 </div>
 <iframe id="forum_embed"
-  src="https://groups.google.com/forum/embed/?place=forum/uofl-acm-cyber-defense&showsearch=false&showpopout=false&showtabs=true&hideforumtitle=true&parentlurl=http%3A%2F%2Fspeedacm.org%2Fmailinglists%2Fuofl-acm-cyber-defense%2F"
+  src="https://groups.google.com/forum/embed/?place=forum/uofl-acm-cyber-defense&showsearch=false&showpopout=false&showtabs=true&hideforumtitle=true&parenturl=http%3A%2F%2Fspeedacm.org%2Fmailinglists%2Fuofl-acm-cyber-defense%2F"
   scrolling="no"
   frameborder="0"
   width="100%"
