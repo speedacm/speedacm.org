@@ -50,6 +50,16 @@
 			<li><a href="/mailinglists/slug">SLUG</a></li>
 		</ul>
             </li>
+            <li class="dropdown{{ if or (eq .Title "sigs") (eq .Section "sigs") }} active{{end}}">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGS<b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+        	    	<li><a href="/sigs/overview">Our SIGS</a></li>
+        	    	<li class="divider"></li>
+        	    	<li><a href="/sigs/slug">SLUG</a></li>
+			<li><a href="/sigs/cyberdefense">Cyber Defense</a></li>
+			<li><a href="/sigs/gamedev">Game Development</a></li>
+		</ul>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 			
