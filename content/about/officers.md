@@ -1,3 +1,9 @@
+---
+title: "ACM Officers"
+date: "2014-03-15"
+tags: [ "calendar" ]
+---
+
 **President**  
 David Jokinen  
 [president@speedacm.org](mailto:president@speedacm.org)
