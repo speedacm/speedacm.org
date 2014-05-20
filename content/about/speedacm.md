@@ -4,77 +4,41 @@ date: "2014-03-15"
 tags: [ "speedacm","about" ]
 ---
 
-# In si Palaestini toto confecta adgnoscitque
+The Association of Computing Machinary is an RSO based out of the Computer Engineering &amp; Computer Science department of the J.B. Speed School of Engineering. As the national ACM states, the ACM is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession. We are dedicated to helping our fellow students advance their skills in today's computing world. However, the ACM is not just limited to that. All students at UofL are welcome to join us, become friends, have fun, and learn.
 
-## Qua ambo titulum
+The UofL Chapter of the ACM provides many benefits to its members including:
 
-Lorem markdownum aethere omnes? Qui aut fuissem plangente caruit geratur et
-praestate intibaque locus decebat meorum gratissima!
+* 24 ACM Lab Access
+* Queit study room (known as the Fishbowl)
+* Access to a wealth of knowledge from its members
+* Members are knowledage about
+	* Programming
+        * Networking
+        * Linux
+        * Windows
+        * Security
+        * Systems Administration
+        * Cloud Orchestration
+        * Many other areas!
+* Server access on the CECS and ACM clouds
+	* Create your own servers!
+	* Create small labs to experiment with
+* Department connections
+	* The other kind of networking...
+* A place to hangout before/between/after class
+* Stress relief through games
+	* Video games and board games available
+* Events throughout the semester
+* Semesterly LAN Party
+* The Hat Wall
+* Food &amp; Drink at resonable prices
+* Free pizza at General Business Meetings
 
-> Fatis qui limen in **nec sublimemque** obliquis Dictaeaque adnuit, lustratum
-> tu munere! Ipse deus, parce fuit [revulsum accessit
-> quamvis](http://en.wikipedia.org/wiki/Sterling_Archer) apex, felix esse,
-> *eunti*.
+<br />
+In addition, the ACM also has many Special Interest Groups to get invovled with!
 
-## Sonat iacentem solque gravitate in igne sagittas
+**Student Linux User Group (SLUG)**: Anything and everything Linux! Whether you're a beginner or advanced, all are welcome. SLUG is always talking about something nerdy and it's usually a lot of fun. This year SLUG hopes to have a couple of Linux Workshops to introduce Linux to other students and hopefully get them hooked. SLUG also runs most of the ACM servers and has many connections into the CECS department servers.
 
-Fera adnuit: vocor disicit exercita sacris, auro licebit liquit. Equidem ad
-anima certamine *revolvor caliginis* si dixit; et. Talis suam viscera fitque,
-cum et ipsis.
+**Cyber Defense**: Information Security, Network Security, Sys-admin, and a whole host of other topics are discussed here. This is a great opportunity to learn a lot of different skills that are very valuable in today's world. It's a great club to expand your skills, do a little hacking, and defend yourself. The group also provides a Cyber Defense competition for a Business School class as their final. The end goal of the club is to compete in the Collegiate Cyber Defense Competition and bring home the National trophy. The competition is late in the Spring semester with many fun mini-competitions along the way. The group went to Regionals just a few months ago and placed 5th!
 
-    if (friendly_switch_print(botPrinterExploit, 94)) {
-        hardeningNat.radcab += dataMedia;
-    } else {
-        petabyteScsi(wddm + 3, constant);
-        reciprocal.primary_sync = virus;
-    }
-    if (asp / cpl_pipeline + pcb) {
-        hdmi_friendly_thumbnail += -5 - 5 + slashdotCut;
-    }
-    bash_reimage_logic += ddrThumbnailDual + xml_cd - dockingAffiliate;
-    if (5 + script) {
-        storageMysql(3, dhcp, inbox(facebookRestoreSubdirectory));
-        plagiarism_captcha_io.trojanByte(3);
-    } else {
-        token_certificate_impression(dllFtp, array_daw_thin, resources -
-                file_copy);
-        packet_myspace(secondaryBasic.dayKeystrokeLag(file), server);
-        drive -= 20 + 2;
-    }
-    title_d += -5 + 5 - asp;
-
-## In lacerti vectus
-
-Infectas horrida inanes, prior, in esse, adhuc. Illud mundi semper licet
-[contemptor equis et](http://tumblr.com/) me illo Mycenae quaerit iuvenale sunt,
-tibi lynca quid; partes ferunt? Revexit ultor sermonibus et gratia lacrimis!
-Causa domus Curibusque vultus vinci maris cum. Sed hunc genus saepe ipsum atque
-quis subitus; a!
-
-- Hoc tu diversa
-- Phrygias odiumque et
-- In torpor funestaque Lemnos volucres genitor interea
-- Argento et parvus restant laesaque
-
-## Crinis per oculos cum aquaticus utrumque habili
-
-Non vetus quae, virgine, oppida ad modo artus, seroque actus virides auro. Nova
-cerva [sequens](http://heeeeeeeey.com/) fecissem concipe, plaudenda manibus.
-
-- Parvumque sedes effigiem meministis mole praeterque ferro
-- Fumabat trado disque iacens alba mitia mater
-- Nec dirae Oceanumque inritamenta linguae paelice saxum
-
-Ducat lacrimisque tumulo **iterum fratres nivis** magni dolore et alios
-concipias transformata Aeneae litore tellus laeva. Habet qua habuit, palude hinc
-reliquit fecundam non maestis tamen. Bracchia iacentem
-[depositoque](http://www.uselessaccount.com/) venatibus; capillis frustra ossa
-erexit sedit, *in* solitam. Repertum equos et virgo, verbis parvo fisso,
-tetigere saxo. Nec ac pariter animi Hymenaee geminas si non, est nec nota agger
-addit egimus hoc Troum succedit!
-
-[contemptor equis et]: http://tumblr.com/
-[depositoque]: http://www.uselessaccount.com/
-[revulsum accessit quamvis]: http://en.wikipedia.org/wiki/Sterling_Archer
-[sequens]: http://heeeeeeeey.com/
-
+**Game Development**: Learn to make some games! This is a fun club to get started in game programming. If you've always wanted to try it, but never knew where to start, you'll fit in perfectly here. This club has always struggled to maintain membership, but lets make this year different! Maybe you'll make the next Minecraft (or whatever game is popular these days among you youngin's.)
