@@ -13,20 +13,12 @@ function run(){
 	
 	
 
-	imgObject1.onload = function() {
-		start(ctx);
-	};
-	imgObject2.onload = function() {
-		start(ctx);
-	};
-	imgObject3.onload = function() {
-		start(ctx);
-	};
-	imgObject1.src = 'http://i.imgur.com/nHw3bXS.png';//'http://i.imgur.com/oGJScCo.jpg';//'http://i.imgur.com/X0jI12M.jpg';//'http://i.imgur.com/1spChaQ.jpg';
-	imgObject2.src = 'http://i.imgur.com/Dc8LYH1.png';//'http://i.imgur.com/jJ1WWJZ.jpg';//'http://i.imgur.com/E45Uq2M.png';
-    imgObject3.src = 'http://i.imgur.com/BoQ1LeJ.png';	
+	start(ctx);
+	start(ctx);
+	start(ctx);
 	
 }
+
 function start(ctx){
 	imagesLoaded++;
 	if(imagesLoaded<3)
@@ -35,74 +27,16 @@ function start(ctx){
 	
 	
 	
-	var news = new newsCast("Updated ACM website!","Was it down for like half the year?");
-	news.addwords("LOOK AT","THE ACM ","WEBSITE");
-	news.addfeeder("Some days I just want to watch the world burn");
-	//addScene(500, news,ctx);
 	var com = new title();
 	addScene(15000000, com,ctx);
 	
 
-	news = new newsCast("Josh wins! Josh wins!","\"Fear me! FEAR ME! MAHAHAHA\"");
-	news.addwords("JOSH WON","HE IS A","HERO");
-	news.addfeeder("Did you know that FREEDOM is all that matters?");
-	//addScene(5000, news,ctx);
-	
 	timeoutID = window.setTimeout(function(){
 		start(ctx);
 	}, timeLoaded);
 	
 }
 
-function newsCast(title, sub){
-	/* Needed Vars for scene */
-	this.img = new Array();
-	this.imgLoc = ["http://i.imgur.com/nHw3bXS.png","http://i.imgur.com/Dc8LYH1.png","http://i.imgur.com/BoQ1LeJ.png"];
-	this.lastScene = null;
-	this.nextScene = null;
-	this.loading = 0;
-	/* Needed Vars for newscast */
-	/* Access vars using functions please */
-	this.title = title;
-	this.sub = sub;
-	this.word1 = "";
-	this.word2 = "";
-	this.word3 = "";
-	this.feeder = "";
-	
-	this.addwords = function(word1,word2,word3) {
-		this.word1 = word1;
-		this.word2 = word2;
-		this.word3 = word3;
-	}
-	
-	this.addfeeder = function(feeder) {
-		this.feeder = feeder;
-	}
-	
-	this.setup = function() {
-	}
-	
-	this.run = function(ctx,t) {
-		//while(this.loading!=0){}
-        displayback(ctx,t, this.img[0]);
-		texttalk(ctx,t,this.word3,this.word2,this.word1);
-		displayanchor(ctx,t,this.img[1]);
-		textheadline(ctx,t,this.title,this.sub);
-		displayicon(ctx,t,this.img[2]);
-		rendertextfeeder(offScreenContext,t,this.feeder);
-		
-		refreshIntervalId = window.setInterval(function () {
-				textfeeder(ctx,t);
-				t = t + 26.0+22*Math.sin(t/800.0);
-		}, 33);
-		
-		return function(){
-		clearInterval(refreshIntervalId);
-		};
-    };
-	
-}
 
 function colormeup(){
 	this.run = function(ctx,t) {
@@ -199,7 +133,7 @@ function title(){
 
 	/* Needed Vars for scene */
 	this.img = new Array();
-	this.imgLoc = ["http://i.imgur.com/nHw3bXS.png"];
+	this.imgLoc = [];
 	this.lastScene = null;
 	this.nextScene = null;
 	this.loading = 0;
