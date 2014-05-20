@@ -10,31 +10,31 @@ The Association of Computing Machinary is an RSO based out of the Computer Engin
 
 The UofL Chapter of the ACM provides many benefits to its members including:
 
-* 24 ACM Lab Access
-* Queit study room (known as the Fishbowl)
-* Access to a wealth of knowledge from its members
-* Members are knowledage about
-  * Programming
-    * Networking
-    * Linux
-    * Windows
-    * Security
-    * Systems Administration
-    * Cloud Orchestration
-    * Many other areas!
-* Server access on the CECS and ACM clouds
-	* Create your own servers!
-	* Create small labs to experiment with
-* Department connections
-	* The other kind of networking...
-* A place to hangout before/between/after class
-* Stress relief through games
-	* Video games and board games available
-* Events throughout the semester
-* Semesterly LAN Party
-* The Hat Wall
-* Food &amp; Drink at resonable prices
-* Free pizza at General Business Meetings
+ * 24 ACM Lab Access
+ * Queit study room (known as the Fishbowl)
+ * Access to a wealth of knowledge from its members
+ * Members are knowledage about
+   * Programming
+   * Networking
+   * Linux
+   * Windows
+   * Security
+   * Systems Administration
+   * Cloud Orchestration
+   * Many other areas!
+ * Server access on the CECS and ACM clouds
+   * Create your own servers!
+   * Create small labs to experiment with
+ * Department connections
+   * The other kind of networking...
+ * A place to hangout before/between/after class
+ * Stress relief through games
+   * Video games and board games available
+ * Events throughout the semester
+ * Semesterly LAN Party
+ * The Hat Wall
+ * Food &amp; Drink at resonable prices
+ * Free pizza at General Business Meetings
 
 <br />
 In addition, the ACM also has many Special Interest Groups to get invovled with!
