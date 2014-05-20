@@ -5,8 +5,8 @@ tags: [ "calendar" ]
 ---
 
 <div align="right">
-	<strong><a href="http://lists.speedacm.org/pipermail/slug/" target="_blank" title="View the archives">View on Mailman</a></strong>
-	&nbsp;-&nbsp;<a href="http://lists.speedacm.org/listinfo/slug" target="_blank" title="Manage subscription to SLUG Mailing List">Manage Subscription</a>
+	<a href="http://lists.speedacm.org/pipermail/slug/" class="btn btn-primary" target="_blank" title="View group on Mailman"><i class="icon-white icon-comment"></i> View on Mailman</a>
+	<a href="http://lists.speedacm.org/listinfo/slug" target="_blank" title="Manage subscription to SLUG Mailing List" class="btn btn-success"><i class="icon-white icon-envelope"></i> Manage</a>
 </div>
 <iframe id="forum_embed"
   src="http://lists.speedacm.org/listinfo/slug"
