@@ -1,12 +1,44 @@
 ---
 title: "Student Interest Groups"
 date: "2014-03-15"
-tags: [ "student interest groups", "sigs" ]
+tags: [ "student interest groups", "sigs", "slug", "cyber defense", "gamedev", "game development", "ccdc", "linux", "student linux user group" ]
 aliases:
     - /sigs
 ---
 The ACM has several Student Interest Groups to get involved with:
 
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	    <img src="/img/ccdc.jpg" alt="Collegiate Cyber Defense Competition - State Qualifing Team">
+	  <div class="caption">
+		<h3>Cyber Defense</h3>
+		<p>Cyber Defense is our SIG dedicated to cyber security, both offensive and defensive. Meetings are once a week to discuss security topics and host hands-on training.</p>
+
+	  </div>
+	</div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <img src="/img/slug.jpg" alt="Tux the Linux Penguin">
+	  <div class="caption">
+		<h3>SLUG</h3>
+		<p>SLUG is our Student Linux User Group. Meetings are once a week and focus on spreading the gospel of Linux, learning something new, and getting a little nerdy.</p>
+
+	  </div>
+	</div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	 <img src="/img/gamedev.png" alt="Game Dev!">
+	 <div class="caption">
+		<h3>Game Dev</h3>
+		<p>Game Development is our SIG to learn how to make games! This is a fun club to get started in game programming or advance your skills. Meetings are once a week.</p>
+
+	  </div>
+	</div>
+  </div>
+</div>
 
 **Student Linux User Group (SLUG)**: Anything and everything Linux! Whether you're a beginner or advanced, all are welcome. SLUG is always talking about something nerdy and it's usually a lot of fun. This year SLUG hopes to have a couple of Linux Workshops to introduce Linux to other students and hopefully get them hooked. SLUG also runs most of the ACM servers and has many connections into the CECS department servers.
 
