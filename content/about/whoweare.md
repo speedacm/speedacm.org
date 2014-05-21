@@ -36,5 +36,3 @@ The UofL Chapter of the ACM provides many benefits to its members including:
 * The Hat Wall
 * Food &amp; Drink at resonable prices
 * Free pizza at General Business Meetings
-
-<br />
