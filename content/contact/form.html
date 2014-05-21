@@ -5,51 +5,105 @@ tags: [ "Contact", "Contact Us" ]
 aliases:
     - /contact
 ---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
 <script>
-function sendMail() {
-    var link = "mailto:uofl-acm-officers@googlegroups.com?"
-             + "subject=" + encodeURIComponent(document.getElementById('subject').value)
-             + "&body=" + encodeURIComponent(document.getElementById('message').value)
-    ;
-    window.open(link, '_blank');
+function submitForm() {
+if($('form').valid()) {
+	$.ajax(
+		{
+			type:'POST',
+			url: $('#contactForm').attr("action"),
+			data:$('#contactForm').serialize(),
+			complete: function(jqXHR, textStatus) {
+				$('#alerts').append(
+					'<div class="alert alert-block alert-info fade in" id="formMessage">' +
+					'We probably got your message, but if you don\'t get an email soon with your ' +
+					'message, it means we didnt. Try emailing us with your mail client at ' +
+					'<a href="mailto:uofl-acm-officers@googlegroups.com">uofl-acm-officers@googlegroups.com</a> ' +
+					'if you think we didn\'t get your message.</div>'
+				);
+				$('#formWell').remove();
+			}
+		}
+	);
 }
+    return false;
+}
+
+$(window).load(function(){
+    $('form').validate({
+        rules: {
+            entry_1499520275: {
+                required: true
+            },
+            entry_465570551: {
+                email: true,
+                required: true
+            },
+            entry_230287523: {
+                required: true
+            },
+            entry_352039239: {
+                required: true
+            }
+        },
+        highlight: function(element) {
+            $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+        },
+        errorElement: 'span',
+        errorClass: 'help-block',
+        errorPlacement: function(error, element) {
+            if(element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
+
+});//]]>  
 </script>
 <div class="col-md-8">
 <legend><span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Us</legend>
-	<div class="well well-sm">
-		<form>
+<div id="alerts"></div>
+	<div class="well well-sm" id="formWell">
+		<form name="contactForm" id="contactForm" action="https://docs.google.com/forms/d/19ra1FhLzraXxIW9ujQgoKC156aYoYIUqxtnIqFPWifo/formResponse" method="POST" onsubmit="return submitForm();">
 			<div class="row">
 			    <div class="col-md-6">
 				<div class="form-group">
-				    <label for="name">Name</label>
+				    <label for="entry.1499520275">Name</label>
 				    <div class="input-group">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-				    	<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+				    	<input type="text" class="form-control" id="entry.1499520275" name="entry_1499520275" placeholder="Enter name" required="required" />
 				    </div>
 				</div>			
 				<div class="form-group">
-				    <label for="email">Email Address</label>
+				    <label for="entry.465570551">Email Address</label>
 				    <div class="input-group">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-					<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+					<input type="email" class="form-control" id="entry.465570551" name="entry.465570551" placeholder="Enter email" required="required" />
 				    </div>
 				</div>
 				<div class="form-group">
-				    <label for="subject">Subject</label>
+				    <label for="entry.230287523">Subject</label>
 				    <div class="input-group">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
-				   	<input type="text" class="form-control" id="subject" placeholder="Enter subject" required="required" />
+				   	<input type="text" class="form-control" id="entry.230287523" name="entry.230287523" placeholder="Enter subject" required="required" />
 				    </div>
 				</div>
 			    </div>
 			    <div class="col-md-6">
 				<div class="form-group">
-				    <label for="name">Message</label>
-				    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+				    <label for="entry.352039239">Message</label>
+				    <textarea name="entry.352039239" id="entry.352039239" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
 				</div>
 			    </div>
 			    <div class="col-md-12">
-				<button type="submit" class="btn btn-primary pull-right" id="btnContactUs" onclick="sendMail()" >Send Message</button>
+				<button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
 			    </div>
 			</div>
 		</form>
