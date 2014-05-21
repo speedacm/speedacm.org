@@ -62,7 +62,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-			
+		<li class="{{ if or (eq .Title "Contact") (eq .Section "contact") }}active{{end}}"><a href="/contact/form">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
