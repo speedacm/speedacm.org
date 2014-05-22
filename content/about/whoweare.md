@@ -9,7 +9,7 @@ aliases:
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
-			<legend><span class="glyphicon glyphicon-star"></span>&nbsp;What we do</legend>
+			<legend><span class="fa fa-desktop"></span>&nbsp;What we do</legend>
 			<p>The Association of Computing Machinary is an RSO based out of the Computer Engineering &amp; Computer Science department of the J.B. Speed School of Engineering. As the national ACM states, the ACM is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession. We are dedicated to helping our fellow students advance their skills in today's computing world. However, the ACM is not just limited to that. All students at UofL are welcome to join us, become friends, have fun, and learn.</p>
 			
 			<p>
@@ -57,7 +57,7 @@ aliases:
 			</p>
 		</div>
 		<div class="col-md-4">
-			<legend><span class="glyphicon glyphicon-globe"></span>&nbsp;Find us</legend>
+			<legend><span class="fa fa-map-marker"></span>&nbsp;Find us</legend>
 			<p>Join the ACM simply by coming by in the basement of the J.B. Speed School of Engineering, Room 002, and speaking to an officer. Someone is usually around to welcome you. We'd love you see you around!</p>
 			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783.7162968434224!2d-85.76018466828974!3d38.21302647540674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88690d641037bf5b%3A0x91f0e870ebdfc983!2sJ.B.+Speed+School+of+Engineering!5e0!3m2!1sen!2sus!4v1400718031210" width="100%" height="300" frameborder="0" style="border:0"></iframe></p>
 

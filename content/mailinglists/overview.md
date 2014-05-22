@@ -13,7 +13,7 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 <div class="well">
 	<legend><span class="glyphicon glyphicon-user"></span>&nbsp;<a href="/mailinglists/uofl-acm-members">ACM General Member List</a></legend>
 	<p>
-		<a href="mailto:uofl-acm-members@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-members@googlegroups.com</a>
+		<a href="mailto:uofl-acm-members@googlegroups.com" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> uofl-acm-members@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-members" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-members/join" target="_blank" title="Join the ACM Members Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Join</a>	
 	</p>
@@ -21,9 +21,9 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 </div>
 
 <div class="well">
-	<legend><span class="glyphicon glyphicon-road"></span>&nbsp;<a href="/mailinglists/uofl-acm-officers">ACM Officers List</a></legend>
+	<legend><span class="fa fa-group"></span>&nbsp;<a href="/mailinglists/uofl-acm-officers">ACM Officers List</a></legend>
 	<p>	
-		<a href="mailto:uofl-acm-officers@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-officers@googlegroups.com</a>
+		<a href="mailto:uofl-acm-officers@googlegroups.com" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> uofl-acm-officers@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-officers" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
 	</p>
 	<p>This list is for important information directed to the ACM officers. If you need to tell the officers anything important, please use this list.</p>
@@ -32,7 +32,7 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 <div class="well">
 	<legend><span class="glyphicon glyphicon-gift"></span>&nbsp;<a href="/mailinglists/slug">ACM SLUG</a></legend>
 	<p>
-		<a href="mailto:slug@speedacm.org" class="btn btn-info" title="Email this group">slug@speedacm.org</a>
+		<a href="mailto:slug@speedacm.org" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> slug@speedacm.org</a>
 		<a href="http://lists.speedacm.org/pipermail/slug/" class="btn btn-primary" target="_blank" title="View archives on Mailman"><i class="glyphicon glyphicon-comment"></i> View on Mailman</a>
 		<a href="http://lists.speedacm.org/listinfo/slug/" target="_blank" title="Manage subscription to SLUG Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Manage</a>
 	</p>
@@ -42,7 +42,7 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 <div class="well">
 	<legend><span class="glyphicon glyphicon-lock"></span>&nbsp;<a href="/mailinglists/uofl-acm-cyber-defense">ACM Cyber Defense List</a></legend>
 	<p>
-		<a href="mailto:uofl-acm-cyber-defense@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-cyber-defense@googlegroups.com</a>
+		<a href="mailto:uofl-acm-cyber-defense@googlegroups.com" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> uofl-acm-cyber-defense@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-cyber-defense" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-cyber-defense/join" target="_blank" title="Join the Cyber Defense Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Join</a>
 	</p>
@@ -50,9 +50,9 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 </div>
 
 <div class="well">
-	<legend><span class="glyphicon glyphicon-play-circle"></span>&nbsp;<a href="/mailinglists/uofl-acm-game-development">ACM Game Development List</a></legend>
+	<legend><span class="fa fa-gamepad"></span>&nbsp;<a href="/mailinglists/uofl-acm-game-development">ACM Game Development List</a></legend>
 	<p>
-		<a href="mailto:uofl-acm-game-development@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-game-development@googlegroups.com</a>
+		<a href="mailto:uofl-acm-game-development@googlegroups.com" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> uofl-acm-game-development@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-game-development" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-game-development/join" target="_blank" title="Join the Game Development Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Join</a>
 	</p>
