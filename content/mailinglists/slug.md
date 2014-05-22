@@ -6,7 +6,7 @@ tags: [ "slug mailing list", "slug", "mailing list", "listserv", "slug listserv"
 <p>
 <div align="right">
 	<a href="http://lists.speedacm.org/pipermail/slug/" class="btn btn-primary" target="_blank" title="View group on Mailman"><i class="glyphicon glyphicon-comment"></i> View on Mailman</a>
-	<a href="http://lists.speedacm.org/listinfo/slug" target="_blank" title="Manage subscription to SLUG Mailing List" class="btn btn-success"><i class="icon-white icon-envelope"></i> Manage</a>
+	<a href="http://lists.speedacm.org/listinfo/slug" target="_blank" title="Manage subscription to SLUG Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Manage</a>
 </div>
 </p>
 <iframe id="forum_embed"
