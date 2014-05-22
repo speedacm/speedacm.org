@@ -1,0 +1,11 @@
+<article class="post">
+	<header>
+		<h3><a href='{{ .Permalink }}'>{{ .Title }}</a></h3>
+		<p><div class="label label-default"><span class="glyphicon glyphicon-time"></span> {{ .Date.Format "Monday, Jan 2, 2006" }}</div></p>
+	</header>
+
+	{{ .Summary }}
+	<footer>
+		<a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+	</footer>
+</article>
