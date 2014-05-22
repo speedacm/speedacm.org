@@ -14,7 +14,7 @@
           <ul class="nav navbar-nav">
             <li {{ if eq .Site.Title .Title }} class="active" {{end}}><a href="/">Home</a></li>
             <li class="dropdown{{ if or (eq .Title "Abouts") (eq .Section "about") }} active{{end}}">
-            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
             	<ul class="dropdown-menu">
         	    	<li><a href="/about/whoweare">Who We Are</a></li>
         	    	<li><a href="/about/officers">Officers</a></li>
@@ -29,7 +29,7 @@
 		</ul>
             </li>
             <li class="dropdown{{ if or (eq .Title "Calendars") (eq .Section "calendars") }} active{{end}}">
-            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendars<b class="caret"></b></a>
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendars <b class="caret"></b></a>
             	<ul class="dropdown-menu">
         	    	<li><a href="/calendars/speedacm">All Calendars</a></li>
         	    	<li class="divider"></li>
@@ -39,7 +39,7 @@
 		</ul>
             </li>
             <li class="dropdown{{ if or (eq .Title "Mailinglists") (eq .Section "mailinglists") }} active{{end}}">
-            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mailing Lists<b class="caret"></b></a>
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mailing Lists <b class="caret"></b></a>
             	<ul class="dropdown-menu">
         	    	<li><a href="/mailinglists/overview">All Mailing Lists</a></li>
         	    	<li class="divider"></li>
@@ -51,7 +51,7 @@
 		</ul>
             </li>
             <li class="dropdown{{ if or (eq .Title "sigs") (eq .Section "sigs") }} active{{end}}">
-            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGS<b class="caret"></b></a>
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGS <b class="caret"></b></a>
             	<ul class="dropdown-menu">
         	    	<li><a href="/sigs/overview">Our SIGS</a></li>
         	    	<li class="divider"></li>
