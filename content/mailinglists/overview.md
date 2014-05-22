@@ -21,7 +21,7 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 </div>
 
 <div class="well">
-	<legend><span class="glyphicon glyphicon-lock"></span>&nbsp;<a href="/mailinglists/uofl-acm-officers">ACM Officers List</a></legend>
+	<legend><span class="glyphicon glyphicon-road"></span>&nbsp;<a href="/mailinglists/uofl-acm-officers">ACM Officers List</a></legend>
 	<p>	
 		<a href="mailto:uofl-acm-officers@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-officers@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-officers" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
@@ -40,7 +40,7 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 </div>
 
 <div class="well">
-	<legend><span class="glyphicon glyphicon-road"></span>&nbsp;<a href="/mailinglists/uofl-acm-cyber-defense">ACM Cyber Defense List</a></legend>
+	<legend><span class="glyphicon glyphicon-lock"></span>&nbsp;<a href="/mailinglists/uofl-acm-cyber-defense">ACM Cyber Defense List</a></legend>
 	<p>
 		<a href="mailto:uofl-acm-cyber-defense@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-cyber-defense@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-cyber-defense" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
@@ -50,7 +50,7 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 </div>
 
 <div class="well">
-	<legend><span class="glyphicon glyphicon-road"></span>&nbsp;<a href="/mailinglists/uofl-acm-game-development">ACM Game Development List</a></legend>
+	<legend><span class="glyphicon glyphicon-play-circle"></span>&nbsp;<a href="/mailinglists/uofl-acm-game-development">ACM Game Development List</a></legend>
 	<p>
 		<a href="mailto:uofl-acm-game-development@googlegroups.com" class="btn btn-info" title="Email this group">uofl-acm-game-development@googlegroups.com</a>
 		<a href="https://groups.google.com/forum/#!forum/uofl-acm-game-development" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
