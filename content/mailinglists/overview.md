@@ -7,7 +7,7 @@ aliases:
 ---
 
 <br>
-The ACM uses a Listserv style mailng list for communications to its members. A listserv allows a sender to send one email to the list, and the message is then transparently sent to each subscriber of the list. This allows communication to all members of the group through one email address. Our lists are setup to allow anybody to send a message to the entire group by sending a message to the address associated with each group.
+The ACM uses a Listserv style mailng list for communications to its members. A listserv allows a sender to send one email to the list, and the message is then transparently sent to each subscriber of the list. This allows communication to all members of the group through one email address. Our lists are setup to allow anybody to send a message to the entire group by sending a message to the address associated with each group. Feel free to use the lists to discuss topics with members.
 <br><br>
 
 <div class="well">
