@@ -19,7 +19,7 @@ aliases:
 				<li>Queit study room (known as the Fishbowl)</li>
 				<li>Many Student Interest Groups to get invovled with</li>
 				<li>Access to a wealth of knowledge from its members</li>
-				<li>Members are knowledage about
+				<li>Members are knowledgeable about
 
 				<ul>
 				<li>Programming</li>
