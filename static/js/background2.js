@@ -1,36 +1,33 @@
 var imgObject1 = new Image();
 var imgObject2 = new Image();
 var imgObject3 = new Image();
-var imagesLoaded = 0;
 var timeLoaded = 0;
 
 function run(){
 	var c=document.getElementById("screen");
+	
 	var ctx=c.getContext("2d");
+	resizeCanvas();
 	ctx.font="30px Courier";
+	window.addEventListener('resize', resizeCanvas, false);
+	
+    function resizeCanvas() {
+            ctx.width = window.innerWidth;
+			ctx.height = 585;
+			c.width = window.innerWidth;
+			c.height =ctx.height;
+    }
+	
 	var t = 0;
-	
-	
-	
-
 	start(ctx);
-	start(ctx);
-	start(ctx);
-	
 }
 
 function start(ctx){
-	imagesLoaded++;
-	if(imagesLoaded<3)
-		return;
 	timeLoaded = 0;
-	
-	
-	
-	var com = new title();
+	var com = new islands();
+	if(Math.random()<.4)
+		com = new title();
 	addScene(15000000, com,ctx);
-	
-
 	timeoutID = window.setTimeout(function(){
 		start(ctx);
 	}, timeLoaded);
@@ -129,8 +126,120 @@ function commercial(){
 	};
 }
 
-function title(){
+function islands(){
 
+	/* Needed Vars for scene */
+	this.img = new Array();
+	this.imgLoc = [];
+	this.lastScene = null;
+	this.nextScene = null;
+	this.loading = 0;
+	
+	
+	this.title = "";
+	this.sub = "";
+	this.setup = function() {
+		
+	}
+
+	this.run = function(ctx,t) {
+		var img = this.img;
+		
+		var noiceGen = new perlinNoise(1);
+		var count = 0;
+		var pixelSize = 1024;
+		var scale = 1;
+		var pos = 0;
+		var list ;
+		var noiseScale = 64 + 64*Math.random();
+		var noiseMulti = .5 + Math.random();
+		var noiseAdd = -.2 + Math.random();
+		function reset() {noiceGen = new perlinNoise(1);count = 0;pixelSize = 1024;pos = 0;scale=1;noiseScale = 64 + 64*Math.random(); noiseMulti = .5 + Math.random();noiseAdd = -.2 + Math.random();}
+		function main() {
+			
+			var width = parseInt(ctx.width/pixelSize+1);
+			var maxSize	= (ctx.width/pixelSize+1)*(ctx.height/pixelSize+1);
+			
+			function buildList() {
+				width = parseInt(ctx.width/pixelSize+1);
+				maxSize	= (ctx.width/pixelSize+1)*(ctx.height/pixelSize+2);
+				var list= new Array();
+				for(var x = 0;x<maxSize;x++)
+					list[x] = x;
+				
+				for(var x = 0;x<maxSize;x++){
+					var pos1 = parseInt(maxSize*Math.random());
+					var pos2 = parseInt(maxSize*Math.random());
+					var temp = list[pos1];
+					list[pos1] = list[pos2];
+					list[pos2] = temp;
+				}
+				return list;
+			}
+			
+			list = buildList();
+			
+			function drawList(){
+				var count = 2*scale;
+				for(var q = pos;q<pos+count;q++)
+				{
+				
+					var test;
+					var x =  parseInt(list[q]%width);
+					var y =  parseInt(list[q]/width);
+					var h = noiceGen.getHeight(x*noiseScale/scale,y*noiseScale/scale)*noiseMulti+noiseAdd;
+					if(h<0)
+						test ='#00435b';
+					else if(h<.3)
+						test ='#007BA7';
+					else if(h<.39)
+						test ='#00b3f4';
+					else if(h<.48)
+						test =randomColor({hue: 'yellow'});
+					else if(h<.80)
+						test =randomColor({hue: 'green'});
+					else
+						test =randomColor({hue: 'orange'});
+						
+						
+					ctx.fillStyle = test;
+					ctx.fillRect(parseInt((x)*pixelSize-pixelSize),parseInt((y)*pixelSize-pixelSize),pixelSize,pixelSize);
+					
+				}
+				pos+=count;
+				if(pos>=list.length)
+				{
+					if(pixelSize<5){
+						reset();
+						list = buildList();
+					}
+					else{
+						pixelSize =parseInt( pixelSize/2);
+						scale *= 2;
+						list = buildList();
+						
+						pos = 0;
+					}
+				}
+			}
+			
+			refreshIntervalId2 = window.setInterval(function() {
+				drawList();
+		
+			}, 60); 
+			t += 1;
+		}
+		main();
+		return function(){
+			this.img = null;
+			clearInterval(refreshIntervalId2);
+		};
+	};
+}
+
+
+function title(){
+	//Please dont judge me -David
 	/* Needed Vars for scene */
 	this.img = new Array();
 	this.imgLoc = [];
@@ -169,12 +278,8 @@ function title(){
 			R2 = 138;
 			G2 = 181;
 			B2 = 255;
-			
-			
-			
-			
-			Color2 = '#A0C8FF';
-			
+
+			Color2 = '#A0C8FF';			
 			
 			function c(num,a) 
 				{return ('0' + Math.floor((num-(num/3))+Math.sin((t*a)*6.28/18000) *(num/3)).toString(16)).substr(-2);}
@@ -195,12 +300,10 @@ function title(){
 							- 2+Math.floor(2*Math.atan(234 +(t/15-y/x)));}
 			function newColor(x,y) 
 				{return '#' + c(a(m(R1,x,y),x,y),ar) + c(a(m(G1,x,y),x,y),ag) + c(a(m(B1,x,y),x,y),ab);}	
-				
 			
-			
-			pixelSize = 10;
-			for(var x = 1;x<595/pixelSize;x++)
-				for(var y = 1;y<595/pixelSize;y++)
+			pixelSize = 30;
+			for(var x = 1;x<ctx.width/pixelSize;x++)
+				for(var y = 1;y<ctx.height/pixelSize+1;y++)
 				{
 					ctx.fillStyle = newColor(x,y);
 					ctx.fillRect(x*pixelSize-pixelSize,y*pixelSize-pixelSize,pixelSize,pixelSize);
@@ -219,6 +322,7 @@ function title(){
 		};
 	};
 }
+
 
 function blank(){
 	this.run = function(ctx,t,end) {
@@ -373,6 +477,60 @@ function displayicon(ctx,t,img){
 		return;
 	ctx.drawImage(img,675,450);
 }
+
+function perlinNoise(SEED){
+	var seed = SEED;
+	var size = 256;
+	var values = new Array();
+	for(var i =0;i< size*2;i++)
+		values[i] =  Math.floor(100*Math.random());
+	
+	function Fade(t){
+		return t*t*t*(t*(t*6-15)+10);
+	}
+	function Lerp(t,a,b){
+	 //   alert(t+" "+a+" "+b);
+		return a+t*(b-a);
+	}
+	function Grad(hash,x,y){
+	    var h = hash ;
+		
+		var u = x;
+		if(hash%4==1||hash%4==2)
+			u = -x;
+		var v = y;
+		if(hash%2==0)
+			v = -y;
+	//	alert(u+" "+v+" "+(u  + v)+ " "+hash);
+		return u  + v;
+	}
+	function Noise(X,Y){
+		X /= 10;
+		Y /= 10;
+		var x = Math.floor(X%(size/2));
+		var y = Math.floor(Y%(size/2));
+		X -= x;
+        Y -= y;
+		var u = Fade(X);
+        var v = Fade(Y);
+		var A = values[x] + y;
+		var B = values[x+1] + y;
+		//alert( B+" "+v+" "+y);
+		
+		
+		return Lerp(v, Lerp(u,Grad(values[A],X,Y),
+		            Grad(values[B],X-1,Y)),
+					Lerp(u,Grad(values[A+1],X,Y-1),
+		            Grad(values[B+1],X-1,Y-1)));
+	}
+	return  {
+		
+		getHeight : function(x,y){
+		return Noise(x,y);}
+	};
+
+}
+
 
 
 run();
