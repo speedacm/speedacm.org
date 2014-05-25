@@ -1,6 +1,4 @@
-var imgObject1 = new Image();
-var imgObject2 = new Image();
-var imgObject3 = new Image();
+
 var timeLoaded = 0;
 
 function run(){
@@ -13,8 +11,14 @@ function run(){
 	
     function resizeCanvas() {
             ctx.width = window.innerWidth;
-			ctx.height = 585;
 			c.width = window.innerWidth;
+			if(window.innerWidth <= 992)	
+				ctx.height = 445;
+			else if(window.innerWidth <= 1199)	
+				ctx.height = 505;
+			else
+				ctx.height = 585;	
+			
 			c.height =ctx.height;
     }
 	
@@ -24,9 +28,17 @@ function run(){
 
 function start(ctx){
 	timeLoaded = 0;
-	var com = new islands();
-	if(Math.random()<.4)
-		com = new title();
+	var com = new title();
+	switch (parseInt(Math.random()*5)) {
+		case 1:case 2:
+			com = new nodes();
+			break;
+		case 3:case 4:
+			com = new islands();
+			break;
+	}
+	//if(Math.random()<.4)
+	//	com = new title();
 	addScene(15000000, com,ctx);
 	timeoutID = window.setTimeout(function(){
 		start(ctx);
@@ -126,6 +138,139 @@ function commercial(){
 	};
 }
 
+function nodes(){
+	/* Needed Vars for scene */
+	this.img = new Array();
+	this.imgLoc = [];
+	this.lastScene = null;
+	this.nextScene = null;
+	this.loading = 0;
+	
+	
+	this.title = "";
+	this.sub = "";
+	this.setup = function() {
+		
+	}
+	
+	this.run = function(ctx,t) {
+		function drawNode(x,y,r){
+			ctx.beginPath();
+			ctx.arc(x, y, r, 0, 2 * Math.PI, false);
+			ctx.fillStyle = 'yellow';
+			ctx.fill();
+			ctx.lineWidth = 5;
+			ctx.strokeStyle = '#003300';
+			ctx.stroke();
+		}
+		function drawLine(con1, con2){
+			 ctx.beginPath();
+			 ctx.moveTo(con1.getX(), con1.getY());
+			 ctx.lineTo(con2.getX(), con2.getY());
+			 ctx.stroke();
+		}
+		function connector(X,Y,W){
+			var x = X;
+			var y = Y;
+			var attached = new Array();
+			var width = W;
+			return  {
+				clear : function(){attached = new Array()},
+				add : function(add){attached[attached.length]=add;add.add2(this);},
+				add2 : function(add){attached[attached.length]=add;},
+				clicked : function(x2,y2){return (Math.sqrt(Math.pow(x-x2,2)+Math.pow(y-y2,2))<width);},
+				addX : function(a){x=x+a},
+				addY : function(a){y=y+a},
+				width :  width,
+				getX :  function(){return x;},
+				getY :  function(){return y;},
+				dis :  function(con){return Math.sqrt(Math.pow(x-con.getX(),2)+Math.pow(y-con.getY(),2));},
+				ang :  function(con){return Math.atan((y-con.getY())/(x-con.getX()));},
+				negx :  function(con){return Math.abs(x-con.getX())/(x-con.getX());},
+				negy :  function(con){return Math.abs(y-con.getY())/(y-con.getY());},
+				drawLines : function(){ 
+				for(var q=0;q<attached.length;q++)
+					drawLine(this, attached[q]);},
+				drawNode : function(){ drawNode(x,y,width)},
+				think : function(list){
+					var fx = 0;
+					var fy = 0;
+					for(var q =0;q<attached.length;q++ )
+					{
+						var dis = (attached[q].dis(this) -200) / 100.0;
+						var ang = attached[q].ang(this);
+						var negx = attached[q].negx(this);
+						var negy = attached[q].negx(this);
+						fx += negx*16*dis*Math.cos(ang);
+						fy += negy*16*dis*Math.sin(ang);
+					}
+					for(var q =0;q<list.length;q++ )
+					{
+						if(list[q]==this)continue;
+						var dis = 1.0/(list[q].dis(this))  ;
+						var ang = list[q].ang(this);
+						var negx = list[q].negx(this);
+						var negy = list[q].negx(this);
+						fx -= negx*Math.pow(600.0,2)*dis*dis*Math.cos(ang);
+						fy -= negy*Math.pow(600.0,2)*dis*dis*Math.sin(ang);
+					}
+					fx -= (x-ctx.width/2)/60.0;
+					fy -= (y-ctx.height/2)/15.0;
+					
+					x += fx;
+					y += fy;
+					
+				}
+			};
+		}
+		var list = new Array();
+		for(var q= 0;q<15;q++)
+			list[q] = new connector(50+(ctx.width-100)*Math.random(),50+(ctx.height-100)*Math.random(),35);
+		for(var q= 0;q<15;q++)
+		{
+			var n1 = parseInt(list.length*Math.random()); 
+			var n2 = parseInt(list.length*Math.random()); 
+			if(n1!=n2)
+			list[n1].add(list[n2]);
+			else
+			q--;
+		}
+	
+		var t = 0;
+		refreshIntervalId2 = window.setInterval(function() {
+				ctx.fillStyle = '#DDD';
+				ctx.fillRect(0,0,ctx.width,ctx.height);
+				for(var q= 0;q<list.length;q++)
+					list[q].drawLines();
+				for(var q= 0;q<list.length;q++)
+					list[q].drawNode();
+				for(var q= 0;q<list.length;q++)
+					list[q].think(list);
+					t++;
+					if(t>100)
+					{
+						for(var q= 0;q<list.length;q++)
+							list[q].clear();
+						for(var q= 0;q<list.length;q++)
+						{
+							var n1 = parseInt(list.length*Math.random()); 
+							var n2 = parseInt(list.length*Math.random()); 
+							if(n1!=n2)
+							list[n1].add(list[n2]);
+							else
+							q--;
+						}
+						t = 0;
+					}
+			}, 44); 
+			
+		return function(){
+			this.img = null;
+			
+		};
+	}
+}
+
 function islands(){
 
 	/* Needed Vars for scene */
@@ -144,6 +289,14 @@ function islands(){
 
 	this.run = function(ctx,t) {
 		var img = this.img;
+		var yellow = new Array();
+		var green = new Array();
+		var orange = new Array();
+		for(var q = 0;q< 16;q++){
+			yellow[q] = randomColor({hue: 'yellow'});
+			green[q] = randomColor({hue: 'green'});
+			orange[q] = randomColor({hue: 'orange'});
+		}
 		
 		var noiceGen = new perlinNoise(1);
 		var count = 0;
@@ -171,8 +324,8 @@ function islands(){
 					var pos1 = parseInt(maxSize*Math.random());
 					var pos2 = parseInt(maxSize*Math.random());
 					var temp = list[pos1];
-					list[pos1] = list[pos2];
-					list[pos2] = temp;
+					list[pos1] = list[x];
+					list[x] = temp;
 				}
 				return list;
 			}
@@ -180,27 +333,30 @@ function islands(){
 			list = buildList();
 			
 			function drawList(){
-				var count = 2*scale;
+				var count = 4*scale;
 				for(var q = pos;q<pos+count;q++)
 				{
 				
 					var test;
 					var x =  parseInt(list[q]%width);
 					var y =  parseInt(list[q]/width);
-					var h = noiceGen.getHeight(x*noiseScale/scale,y*noiseScale/scale)*noiseMulti+noiseAdd;
+					var h = noiceGen.getHeight(x*noiseScale/scale-pixelSize/2/scale,y*noiseScale/scale-pixelSize/2/scale)*noiseMulti+noiseAdd;
 					if(h<0)
 						test ='#00435b';
 					else if(h<.3)
 						test ='#007BA7';
 					else if(h<.39)
 						test ='#00b3f4';
-					else if(h<.48)
-						test =randomColor({hue: 'yellow'});
-					else if(h<.80)
-						test =randomColor({hue: 'green'});
-					else
-						test =randomColor({hue: 'orange'});
+					else if(h<.48){
 						
+						test = yellow[q%16];
+					}else if(h<.80){
+				
+						test = green[q%16];
+					}else{
+					
+						test =orange[q%16];
+					}	
 						
 					ctx.fillStyle = test;
 					ctx.fillRect(parseInt((x)*pixelSize-pixelSize),parseInt((y)*pixelSize-pixelSize),pixelSize,pixelSize);
@@ -236,6 +392,7 @@ function islands(){
 		};
 	};
 }
+
 
 
 function title(){
