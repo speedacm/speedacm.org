@@ -254,6 +254,7 @@ border: 1px dashed #AD0000;
 	color: #428bca;
 }
 
+@media (max-width: 767px)
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	color: #fff !important;
 }
