@@ -253,3 +253,7 @@ border: 1px dashed #AD0000;
 .doneby{
 	color: #428bca;
 }
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #fff !important;
+}
