@@ -258,3 +258,7 @@ border: 1px dashed #AD0000;
 		color: #fff !important;
 	}
 }
+
+body > div.footer > div > div > div > ul > li > a {
+	color: #FFF;
+}
