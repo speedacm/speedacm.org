@@ -259,3 +259,7 @@ border: 1px dashed #AD0000;
 		color: #fff !important;
 	}
 }
+
+body.hasGoogleVoiceExt {
+	overflow: hidden;
+}
