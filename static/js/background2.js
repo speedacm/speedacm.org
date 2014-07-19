@@ -471,16 +471,16 @@ function lighting(){
 		
 			var normal1 = list[1].getSub(list[0]).getCross(list[2].getSub(list[0])).getNormal();
 			var normal2 = pnt1.getSub(sumPnt).getNormal();
-			//var normal3 = pnt2.getSub(sumPnt).getNormal();
-			//var normal4 = pnt3.getSub(sumPnt).getNormal();
+			var normal3 = pnt2.getSub(sumPnt).getNormal();
+			var normal4 = pnt3.getSub(sumPnt).getNormal();
 			var distance1 = pnt1.getSub(sumPnt).getLength();
-			//var distance2 = pnt2.getSub(sumPnt).getLength();
-			//var distance3 = pnt3.getSub(sumPnt).getLength();
+			var distance2 = pnt2.getSub(sumPnt).getLength();
+			var distance3 = pnt3.getSub(sumPnt).getLength();
 
 			var num1 = normal1.getDot(normal2)*(800/distance1)+.2;
-			//var num2 = normal1.getDot(normal3)*(800/distance2)+.2;
-			//var num3 = normal1.getDot(normal4)*(800/distance3)+.2;		
-			color = "rgb("+parseInt(num1*255)+","+parseInt(num1*255)+","+parseInt(num1*255)+")";
+			var num2 = normal1.getDot(normal3)*(800/distance2)+.2;
+			var num3 = normal1.getDot(normal4)*(800/distance3)+.2;		
+			color = "rgb("+parseInt(num1*255)+","+parseInt(num2*255)+","+parseInt(num3*255)+")";
 		}
 		return  {
 			add  : function(i){list[list.length]=i;},
@@ -503,7 +503,7 @@ function lighting(){
 		window.addEventListener("mousemove", mouseMove, false);
 		var size = 40;
 		var noiceMul =90;
-		var noiceScale = 3;
+		var noiceScale = 4;
 		var width = screen.getWidth()/size+1;
 		var height = 15;
 		for(var x = 0;x<width;x++){
