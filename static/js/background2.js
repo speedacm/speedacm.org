@@ -503,7 +503,7 @@ function lighting(){
 		window.addEventListener("mousemove", mouseMove, false);
 		var size = 40;
 		var noiceMul =90;
-		var noiceScale = 4;
+		var noiceScale = 7;
 		var width = screen.getWidth()/size+1;
 		var height = 15;
 		for(var x = 0;x<width;x++){
@@ -536,11 +536,11 @@ function lighting(){
 	function update(delta){
 		time += delta;
 		lightList[0].setX( 700+600*Math.sin(-time/1400+12000));
-		lightList[0].setY( 700+400*Math.cos(-time/1400+12000));
+		lightList[0].setY( 300+400*Math.cos(-time/1400+12000));
 		lightList[1].setX( 700+500*Math.sin(time/2200));
-		lightList[1].setY( 700+500*Math.cos(time/2200));
+		lightList[1].setY( 300+500*Math.cos(time/2200));
 		lightList[2].setX( 900+800*Math.sin(time/1000+17000));
-		lightList[2].setY( 500+400*Math.cos(time/1000+17000));
+		lightList[2].setY( 200+400*Math.cos(time/1000+17000));
 		for(var i = 0;i<faceList.length;i++)
 			faceList[i].lightSource(lightList[0],lightList[1],lightList[2]);
 		
