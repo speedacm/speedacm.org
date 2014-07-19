@@ -10,7 +10,9 @@ function start(){
 	main.addScene(90000, new lighting());
 	if(Math.random()>.6)
 	main.addScene(90000, new nodes());
+	if(Math.random()>.6)
 	main.addScene(90000, new islands());
+	main.addScene(15000, new terrain());
 	if(Math.random()>.2)
 	main.addScene(15000, new title());
 	if(Math.random()>.2)
@@ -502,8 +504,8 @@ function lighting(){
 	function start() {
 		window.addEventListener("mousemove", mouseMove, false);
 		var size = 40;
-		var noiceMul =90;
-		var noiceScale = 5;
+		var noiceMul =100;
+		var noiceScale = 6;
 		var width = screen.getWidth()/size+1;
 		var height = 15;
 		for(var x = 0;x<width;x++){
