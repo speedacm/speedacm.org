@@ -820,7 +820,7 @@ ctx.restore();
 
 	function update(delta){
 		camera.setY(-100);
-		camera.setX(screen.getWidth()/2-200);
+		camera.setX(2*screen.getWidth()/5);
 		time += delta;
 		t++;
 		if(time>3000){
