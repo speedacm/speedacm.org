@@ -790,7 +790,7 @@ ctx.restore();
 	function start() {
 		
 		window.addEventListener("mousemove", mouseMove, false);
-		map = new Grid(parseInt(screen.getWidth()/ratioX),parseInt(screen.getHeight()/ratioY));
+		map = new Grid(parseInt(screen.getWidth()/ratioX)+3,parseInt(screen.getHeight()/ratioY)+3);
 		
 		for(var i=0;i<5;i++){
 			noiseList[i] = new Image(40,40);
@@ -820,7 +820,7 @@ ctx.restore();
 
 	function update(delta){
 		camera.setY(-100);
-		camera.setX(screen.getWidth()/2);
+		camera.setX(screen.getWidth()/2-200);
 		time += delta;
 		t++;
 		if(time>3000){
