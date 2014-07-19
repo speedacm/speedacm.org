@@ -10,7 +10,6 @@ function start(){
 	main.addScene(90000, new lighting());
 	if(Math.random()>.2)
 	main.addScene(90000, new nodes());
-	if(Math.random()>.2)
 	main.addScene(90000, new islands());
 	if(Math.random()>.2)
 	main.addScene(15000, new title());
