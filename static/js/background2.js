@@ -7,23 +7,23 @@ function start(){
 	var screen = new Screen("100%","585",c);
 	main = new backgrounds(screen);
 	if(Math.random()>.7)
-	main.addScene(90000, new lighting());
+	main.addScene(15000, new lighting());
 	if(Math.random()>.6)
-	main.addScene(90000, new nodes());
+	main.addScene(15000, new nodes());
 	if(Math.random()>.6)
-	main.addScene(90000, new islands());
+	main.addScene(15000, new islands());
 	main.addScene(15000, new terrain());
 	if(Math.random()>.2)
 	main.addScene(15000, new title());
 	if(Math.random()>.2)
-	main.addScene(90000, new lighting());
+	main.addScene(15000, new lighting());
 	if(Math.random()>.2)
-	main.addScene(90000, new nodes());
+	main.addScene(15000, new nodes());
 	if(Math.random()>.2)
-	main.addScene(90000, new islands());
+	main.addScene(15000, new islands());
 	if(Math.random()>.2)
 	main.addScene(15000, new title());
-	main.addScene(90000, new lighting());
+	main.addScene(15000, new lighting());
 	//main.addScene(15000, new classic());
 	main.start();
 
@@ -791,7 +791,7 @@ ctx.restore();
 		
 		window.addEventListener("mousemove", mouseMove, false);
 		map = new Grid(parseInt(screen.getWidth()/ratioX/2)+3,parseInt(screen.getHeight()/ratioY/2)+3);
-		camera.setX(screen.getWidth()/2);
+		camera.setX(screen.getWidth()/3);
 		for(var i=0;i<5;i++){
 			noiseList[i] = new Image(40,40);
 			noiseList[i].src = createNoise(noiseList[i]);
