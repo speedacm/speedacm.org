@@ -6,9 +6,9 @@ function start(){
 	var c=document.getElementById("screen");
 	var screen = new Screen("100%","585",c);
 	main = new backgrounds(screen);
-	if(Math.random()>.1)
+	if(Math.random()>.7)
 	main.addScene(90000, new lighting());
-	if(Math.random()>.3)
+	if(Math.random()>.6)
 	main.addScene(90000, new nodes());
 	main.addScene(90000, new islands());
 	if(Math.random()>.2)
@@ -503,7 +503,7 @@ function lighting(){
 		window.addEventListener("mousemove", mouseMove, false);
 		var size = 40;
 		var noiceMul =90;
-		var noiceScale = 7;
+		var noiceScale = 5;
 		var width = screen.getWidth()/size+1;
 		var height = 15;
 		for(var x = 0;x<width;x++){
