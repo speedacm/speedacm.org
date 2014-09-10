@@ -30,13 +30,13 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 </div>
 
 <div class="well">
-	<legend><span class="glyphicon glyphicon-gift"></span>&nbsp;<a href="/mailinglists/slug">ACM SLUG</a></legend>
+	<legend><span class="glyphicon glyphicon-gift"></span>&nbsp;<a href="/mailinglists/uofl-acm-slug">ACM SLUG</a></legend>
 	<p>
-		<a href="mailto:slug@speedacm.org" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> slug@speedacm.org</a>
-		<a href="http://lists.speedacm.org/pipermail/slug/" class="btn btn-primary" target="_blank" title="View archives on Mailman"><i class="glyphicon glyphicon-comment"></i> View on Mailman</a>
-		<a href="http://lists.speedacm.org/listinfo/slug/" target="_blank" title="Manage subscription to SLUG Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Manage</a>
+		<a href="mailto:uofl-acm-slug@googlegroups.com" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> uofl-acm-officers@googlegroups.com</a>
+		<a href="https://groups.google.com/forum/#!forum/uofl-acm-slug" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
+		<a href="https://groups.google.com/forum/#!forum/uofl-acm-slug/join" target="_blank" title="Join the SLUG Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Join</a>
 	</p>
-	<p>Hosted on the CECS Research Network on a Mailman instance, this is the offical form of communication for the Student Linux User Group. Discuss topics, share cool tricks, share information about the latest developments in the Open Source world, and pretty much anything else. We are talking about <a href="https://en.wikipedia.org/wiki/Gratis_versus_libre" target="_blank">free as in speech, not beer here.</a> Like the General Member list, remember to be mindful in your posts. This is a public group and reflects on you and the entire group.</p>
+	<p>This is the offical form of communication for the Student Linux User Group. Discuss topics, share cool tricks, share information about the latest developments in the Open Source world, and pretty much anything else. We are talking about <a href="https://en.wikipedia.org/wiki/Gratis_versus_libre" target="_blank">free as in speech, not beer here.</a> Like the General Member list, remember to be mindful in your posts. This is a public group and reflects on you and the entire group.</p>
 </div>
 
 <div class="well">
