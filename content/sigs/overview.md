@@ -38,6 +38,17 @@ The ACM has several Student Interest Groups to get involved with:
 	  </div>
 	</div>
   </div>
+  <div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	 <img src="/img/hacking.jpg" alt="Hacking!">
+	 <div class="caption">
+		<h3>Hacking</h3>
+		<p>Hacking SIG is not about cyber hacking. If you want to learn about electronics, hackathons, or sometimes just use hardware or software for their unintended purposes, come check this out!</p>
+			
+	  </div>
+	</div>
+  </div>
+
 </div>
 
 **Student Linux User Group (SLUG)**: Anything and everything Linux! Whether you're a beginner or advanced, all are welcome. SLUG is always talking about something nerdy and it's usually a lot of fun. This year SLUG hopes to have a couple of Linux Workshops to introduce Linux to other students and hopefully get them hooked. SLUG also runs most of the ACM servers and has many connections into the CECS department servers.

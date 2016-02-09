@@ -59,4 +59,12 @@ The ACM uses a Listserv style mailng list for communications to its members. A l
 	<p>Communication for the Game Development group. Information about meetings, cool things, projects, and other game development information. Feel free to share your projects with the group, ask for help, or collaborate through this group. The Game Development group will propser with an active community. Like the General Member list, remember to be mindful in your posts. This is a public group and reflects on you and the entire group.</p>
 </div>
 
-
+<div class="well">
+	<legend><span class="glyphicon glyphicon-user"></span>&nbsp;<a href="/mailinglists/uofl-acm-hacking">ACM Hacking List</a></legend>
+	<p>
+		<a href="mailto:uofl-acm-hacking@googlegroups.com" class="btn btn-info" title="Email this group"><i class="fa fa-envelope-o"></i> uofl-acm-hacking@googlegroups.com</a>
+		<a href="https://groups.google.com/forum/#!forum/uofl-acm-hacking" class="btn btn-primary" target="_blank" title="View group on Google"><i class="glyphicon glyphicon-comment"></i> View on Google</a>
+		<a href="https://groups.google.com/forum/#!forum/uofl-acm-hacking/join" target="_blank" title="Join the Hacking Mailing List" class="btn btn-success"><i class="glyphicon glyphicon-envelope"></i> Join</a>
+	</p>
+	<p>Communication for the Hacking SIG. Information about meetings, cool things, projects, and other hacking information. Feel free to share your projects with the group, ask for help, or collaborate through this group. The Hacking SIG will propser with an active community. Like the General Member list, remember to be mindful in your posts. This is a public group and reflects on you and the entire group.</p>
+</div>
