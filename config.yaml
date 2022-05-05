@@ -1,4 +1,4 @@
-baseurl: "http://speedacm.org"
+baseurl: "/"
 title: "Speed ACM"
 indexes:
   tag: "tags"
