@@ -6,7 +6,6 @@ tags: [ "student interest group", "sig", "student interest groups", "sigs", "slu
 <p>
 <div align="right">
 <a href="/calendars/slug/" title="View the SLUG calendar" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-calendar"></span> Calendar</a>
-<a href="/mailinglists/uofl-acm-slug/" title="View the SLUG Mailing List" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-envelope"></span> Mailing List</a>
 </div>
 </p>
 
