@@ -53,9 +53,17 @@
 		</ul>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-		<li class="{{ if or (eq .Title "Contact") (eq .Section "contact") }}active{{end}}"><a href="/contact/form">Contact</a></li>
+		  <div class="navbar-right">
+		  <ul class="nav navbar-nav">
+			<li><a href="https://louisville.campuslabs.com/engage/organization/speed-association-for-computing-machinery">EngageUofL</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav">
+			<li><a href="http://discord.speedacm.org/">Discord</a></li>
+		  </ul>
+          <ul class="nav navbar-nav">
+		    <li class="{{ if or (eq .Title "Contact") (eq .Section "contact") }}active{{end}}"><a href="/contact/form">Contact</a></li>
           </ul>
+		  </div>
         </div><!--/.nav-collapse -->
       </div>
     </div>
