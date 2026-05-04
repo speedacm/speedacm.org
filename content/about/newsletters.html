@@ -3,8 +3,28 @@ title: "ACM Newsletters"
 date: "2026-05-04"
 tags: [ "newsletters" ]
 ---
-<div align="right">
-	<p><a href="https://drive.google.com/file/d/181I80JMcNrsje6_URrC3ppWgGO33RneJ/view?usp=sharing" target="_blank" title="View document on Google Drive" class="btn btn-primary"><i class="glyphicon glyphicon-hdd"></i> View on Google Drive</a></p>
-</div>
-<iframe src="https://drive.google.com/file/d/181I80JMcNrsje6_URrC3ppWgGO33RneJ/preview" width="100%" height="700" frameborder="0"></iframe>
 
+<h2>Newsletters</h2>
+
+<ul>
+  <li><a href="#" onclick="loadPDF('181I80JMcNrsje6_URrC3ppWgGO33RneJ')">Newsletter #1 - May 2026</a></li>
+  <!-- <li><a href="#" onclick="loadPDF('Document ID')">Newsletter #2 - (Month) 2026</a></li> -->
+</ul>
+
+<div style="text-align: right;">
+  <a id="driveLink" href="https://drive.google.com/file/d/181I80JMcNrsje6_URrC3ppWgGO33RneJ/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary"> View on Google Drive </a>
+</div>
+
+<div style="position: relative; padding-bottom: 75%; height: 0;">
+  <iframe id="pdfViewer" src="https://drive.google.com/file/d/181I80JMcNrsje6_URrC3ppWgGO33RneJ/preview" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" loading="lazy"> </iframe>
+</div>
+
+<script>
+function loadPDF(fileId) {
+  document.getElementById("pdfViewer").src =
+    "https://drive.google.com/file/d/" + fileId + "/preview";
+
+  document.getElementById("driveLink").href =
+    "https://drive.google.com/file/d/" + fileId + "/view";
+}
+</script>
